@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  src: local("FuturaDemiC"),
+    url("/source/assets/fonts/FuturaDemiC.woff2") format("woff2"),
+    url("/source/assets/fonts/FuturaDemiC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yeseva One", "Georgia", serif;
+  src: local("Yeseva One Regular"),
+    local("YesevaOne-Regular"),
+    url("/source/assets/fonts/YesevaOne-Regular.woff2") format("woff2"),
+    url("/source/assets/fonts/YesevaOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  src: local("Futura Demi Italic Cyrillic"),
+    local("FuturaDemiC-Italic"),
+    url("/source/assets/fonts/FuturaDemiC-Italic.woff2") format("woff2"),
+    url("/source/assets/fonts/FuturaDemiC-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  src: local("Proxima Nova Regular"),
+    local("ProximaNova-Regular"),
+    url("/source/assets/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("/source/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaMediumC", "Arial", sans-serif;
+  src: local("Futura Medium Cyrillic"),
+    local("FuturaMediumC"),
+    url("/source/assets/fonts/FuturaMediumC.woff2") format("woff2"),
+    url("/source/assets/fonts/FuturaMediumC.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaBookC", "Arial", sans-serif;
+  src: local("Futura Book Cyrillic"),
+    local("FuturaBookC"),
+    url("/source/assets/fonts/FuturaBookC.woff2") format("woff2"),
+    url("/source/assets/fonts/FuturaBookC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,15 @@
+@mixin font-text ($font-size: 15px, $line-height: 25px, $color: $text-faded-color) {
+  font-family: "FuturaBookC", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-title ($font-size: 20px, $line-height: 28px, $color: $charcoal) {
+  font-family: "Yeseva One", "Georgia", serif;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

@@ -1,0 +1,23 @@
+$canary: #e3b873;
+$white: #ffffff;
+$white-faded: rgba(255, 255, 255, 0.3);
+$grey: #363636;
+$grey-faded: rgba(54, 54, 54, 0.5);
+$oil: #131313;
+$charcoal: #181818;
+
+$accent-color: $canary;
+$text-ondark-color: $white;
+$text-ondark-faded-color: $white-faded;
+$text-color: $grey;
+$text-faded-color: $grey-faded;
+$text-title-color: $charcoal;
+$bg-dark-color: $charcoal;
+$bg-light-color: $white;
+$bg-darkest-color: $oil;
+
+$mobile: 375px;
+$desktop: 1440px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
