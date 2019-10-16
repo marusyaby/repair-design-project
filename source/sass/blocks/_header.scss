@@ -1,0 +1,13 @@
+.header {
+  background-color: $bg-darkest-color;
+}
+
+.header__menu {
+  min-height: 85px - 20px;
+}
+
+@media (max-width: $mobile) {
+  .header__menu {
+    min-height: 55px - 20px;
+  }
+}

@@ -17,7 +17,11 @@ $bg-light-color: $white;
 $bg-darkest-color: $oil;
 
 $mobile: 375px;
+$tablet: 1000px;
 $desktop: 1440px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+$link-hover: lighten($accent-color, 10);
+$link-active: darken($accent-color, 10);

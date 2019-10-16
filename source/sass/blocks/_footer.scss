@@ -1,0 +1,13 @@
+.footer {
+  background-color: $bg-dark-color;
+}
+
+.footer__menu {
+  min-height: 135px - 20px;
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    display: none;
+  }
+}

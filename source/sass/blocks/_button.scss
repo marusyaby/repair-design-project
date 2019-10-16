@@ -1,0 +1,25 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  text-align: center;
+  color: $text-ondark-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $accent-color;
+  border-radius: 2px;
+
+  &:hover {
+    color: $bg-darkest-color;
+    background-color: $text-ondark-color;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

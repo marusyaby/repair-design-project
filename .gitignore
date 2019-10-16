@@ -11,4 +11,4 @@ npm-debug.*
 Thumbs.db
 build/
 img-source/
-psd/
+source/fig

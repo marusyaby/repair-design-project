@@ -12,12 +12,11 @@ a {
   @include font-text(14px, 16px, $accent-color);
 
   &:hover {
-    color: lighten($accent-color, 10);
+    color: $link-hover;
   }
 
   &:active {
-    color: darken($accent-color, 10);
-    opacity: 0.3;
+    @include link-active;
   }
 }
 
@@ -44,14 +43,16 @@ img {
 }
 
 .wrapper {
-  max-width: 1234px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 @media (max-width: $mobile) {
   .wrapper {
-    max-width: 319px + 18px + 18px;
-    padding-left: 18px;
+    max-width: 375px;
     padding-right: 18px;
+    padding-left: 18px;
   }
 }
