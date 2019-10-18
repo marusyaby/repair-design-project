@@ -35,7 +35,7 @@
   background-color: $bg-darkest-color;
 
   &:hover {
-    background-color: lighten($bg-darkest-color, 2);
+    transform: translate(15px);
   }
 
   &::after {
@@ -74,6 +74,7 @@
 
 .intro__title--highlighted {
   color: $accent-color;
+  white-space: nowrap;
 }
 
 .intro__description {
@@ -88,21 +89,13 @@
   min-height: 51px;
   margin-top: 25px;
   margin-right: 15px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
 }
 
 .intro__button--minor {
   background-color: transparent;
   border: 1px solid $text-ondark-color;
-
-  &:hover {
-    color: $bg-darkest-color;
-    background-color: $text-ondark-color;
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
+  box-shadow: none;
 }
 
 .intro__scroll-button {
@@ -130,18 +123,13 @@
 
   &:hover {
     color: $link-hover;
-
-    &::after {
-      opacity: 0.8;
-    }
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   &:active {
     color: $link-active;
-
-    &::after {
-      opacity: 0.7;
-    }
+    transform: scale(1);
   }
 }
 
@@ -158,8 +146,8 @@
 
   .intro__title {
     margin-bottom: 15px;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .intro__description {
@@ -169,7 +157,7 @@
   }
 }
 
-@media (max-width: $tablet - 400px) {
+@media (max-width: $smalltablet) {
   .intro__content-wrapper {
     height: 0;
     min-height: 480px;

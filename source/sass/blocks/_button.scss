@@ -13,13 +13,15 @@
   text-decoration: none;
   background-color: $accent-color;
   border-radius: 2px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 
   &:hover {
-    color: $bg-darkest-color;
-    background-color: $text-ondark-color;
+    color: $text-ondark-color;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   &:active {
-    opacity: 0.8;
+    transform: scale(0.95);
   }
 }
