@@ -23,6 +23,10 @@
   margin-bottom: 65px;
 }
 
+.process__item-description {
+  width: 80%;
+}
+
 .process__right-slider-wrapper {
   width: calc(65% - 110px);
   margin-top: -100px;
@@ -73,6 +77,10 @@
 @media (max-width: $mobile + 100px) {
   .process__right-slider-wrapper {
     display: none;
+  }
+
+  .process__item-description {
+    width: 100%;
   }
 }
 

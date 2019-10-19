@@ -38,7 +38,7 @@ ol .slider__item {
 }
 
 .slider__item-description {
-  width: 80%;
+  width: 100%;
   margin: 0;
   margin-bottom: 10px;
   border-collapse: collapse;
@@ -306,6 +306,12 @@ ol .slider__title--active {
 @media (max-width: $smalltablet) {
   .slider__button {
     display: none;
+  }
+}
+
+@media (max-width: $mobile + 100px) {
+  .slider__wrapper--left {
+    flex-basis: 100%;
   }
 }
 
