@@ -156,20 +156,20 @@
                     <label class="form__label broadcast__label">
                         Name
                         <input autocomplete="off" class="form__input broadcast__input" name="user-name"
-                               placeholder="What is your name:" type="text">
+                               placeholder="What is your name:" type="text" minlength="1" required>
                     </label>
 
                     <label class="form__label broadcast__label">
                         Phone
                         <input autocomplete="off" class="form__input broadcast__input" name="user-phone"
-                               placeholder="Your phone number:" type="tel">
+                               placeholder="Your phone number:" type="tel" minlength="6" required>
                     </label>
 
                     <button class="button broadcast__submit-button" type="submit">Submit</button>
 
 
                     <input checked class="form__checkbox" id="broadcast-agreement" name="personal-data-agreement"
-                           tabindex="0" type="checkbox">
+                           tabindex="0" type="checkbox" required>
                     <label class="form__label--checkbox broadcast__label--agreement" for="broadcast-agreement">
                         I agree to the processing of personal data
                     </label>
