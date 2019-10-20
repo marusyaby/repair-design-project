@@ -1,0 +1,27 @@
+.price-repair {
+  margin-bottom: 350px;
+}
+
+.price-repair__title {
+  &::after {
+    background-image: url("../assets/img/icon-price-repair.svg");
+    margin-bottom: 30px;
+  }
+}
+
+.price-repair__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $smalltablet) {
+  .price-repair__wrapper {
+    flex-direction: column;
+  }
+
+  .price-repair__title {
+    &::after {
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -3,6 +3,17 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 114px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .section__title--accented {

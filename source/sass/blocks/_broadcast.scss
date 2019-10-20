@@ -1,6 +1,6 @@
 .broadcast {
   margin-top: -310px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   background: transparent;
 }
 
@@ -9,15 +9,7 @@
   color: $text-ondark-color;
 
   &::after {
-    content: "";
-    display: block;
-    width: 114px;
-    height: 28px;
-    margin: 0 auto;
-    margin-top: 15px;
     background-image: url("../assets/img/icon-broadcast.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -115,6 +107,10 @@
 }
 
 @media (max-width: $smalltablet) {
+  .broadcast {
+    margin-bottom: 100px;
+  }
+
   .broadcast__form {
     flex-direction: column;
   }
@@ -134,6 +130,7 @@
 @media (max-width: $mobile) {
   .broadcast {
     background-color: $bg-darkest-color;
+    margin-bottom: 85px;
   }
 
   .broadcast__description {
