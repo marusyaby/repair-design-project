@@ -151,11 +151,11 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/js/**/*.js", gulp.series("cleanJs", "js", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("cleanJs", "copy", "refresh"));
   gulp.watch("source/assets/img/*.svg", gulp.series("copy", "refresh"));
   gulp.watch("source/assets/img/*-sprite.svg", gulp.series("copy", "sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

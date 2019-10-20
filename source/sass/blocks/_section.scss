@@ -1,5 +1,8 @@
 .section__title {
   @include font-title();
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section__title--accented {
@@ -20,6 +23,21 @@
     display: block;
     width: 90px;
     height: 1.5px;
+    background-color: $accent-color;
+  }
+}
+
+.section__description--bottom {
+  @include font-text(18px, 34px, $text-color);
+  margin: 0 auto;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 1.5px;
+    margin: 0 auto 34px;
     background-color: $accent-color;
   }
 }
@@ -46,6 +64,20 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  .section__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .section__description--bottom {
+    @include font-text(14px, 24px, $text-ondark-color);
+    margin-bottom: 20px;
+
+    &::before {
+      margin-bottom: 15px;
     }
   }
 }

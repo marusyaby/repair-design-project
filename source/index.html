@@ -113,8 +113,8 @@
                     <div class="slider__wrapper--right">
                         <ul class="slider__titles-list">
                             <li class="slider__title slider__title--active">Rostov-on-Don, Admiral</li>
-                            <li class="slider__title">Sochi Thieves</li>
-                            <li class="slider__title">Rostov-on-Don Patriotic</li>
+                            <li class="slider__title" tabindex="0">Sochi Thieves</li>
+                            <li class="slider__title" tabindex="0">Rostov-on-Don Patriotic</li>
                         </ul>
                         <ul class="slider__images-list">
                             <li class="slider__image">
@@ -133,6 +133,47 @@
                         <span class="visually-hidden">Previous</span>
                     </button>
                 </section>
+            </div>
+        </section>
+
+        <section class="broadcast">
+            <div class="wrapper">
+                <h2 class="section__title broadcast__title">Online Control</h2>
+                <div class="broadcast__video broadcast__video--enabled">
+                    <a class="broadcast__video-link" href="https://youtu.be/l5vOKjvyKdw"></a>
+                    <picture class="broadcast__media">
+                        <img alt="Live Broadcast" src="assets/img/video-poster.jpg">
+                    </picture>
+                    <button class="button broadcast__play-button" type="button"><span
+                            class="visually-hidden">Play</span></button>
+                </div>
+                <p class="section__description--bottom broadcast__description">At each facility, a camera is installed
+                    that broadcasts the progress of work on the clock. At any time, you can go to our website and
+                    monitor the progress of work in your apartment. You can watch the live broadcast from one of our
+                    facilities! Leave a request below and you will receive a link to the broadcast.
+                </p>
+                <form action="" class="form broadcast__form " method="post">
+                    <label class="form__label broadcast__label">
+                        Name
+                        <input autocomplete="off" class="form__input broadcast__input" name="user-name"
+                               placeholder="What is your name:" type="text">
+                    </label>
+
+                    <label class="form__label broadcast__label">
+                        Phone
+                        <input autocomplete="off" class="form__input broadcast__input" name="user-phone"
+                               placeholder="Your phone number:" type="tel">
+                    </label>
+
+                    <button class="button broadcast__submit-button" type="submit">Submit</button>
+
+
+                    <input checked class="form__checkbox" id="broadcast-agreement" name="personal-data-agreement"
+                           tabindex="0" type="checkbox">
+                    <label class="form__label--checkbox broadcast__label--agreement" for="broadcast-agreement">
+                        I agree to the processing of personal data
+                    </label>
+                </form>
             </div>
         </section>
 
@@ -167,7 +208,7 @@
                             <label class="slider__toggle" for="step-4">Step 4</label>
                             <label class="slider__toggle" for="step-5">Step 5</label>
                             <label class="slider__toggle" for="step-6">Step 6</label>
-                            <input class="visually-hidden" id="step-1" name="toggle" type="radio" checked>
+                            <input checked class="visually-hidden" id="step-1" name="toggle" type="radio">
                             <input class="visually-hidden" id="step-2" name="toggle" type="radio">
                             <input class="visually-hidden" id="step-3" name="toggle" type="radio">
                             <input class="visually-hidden" id="step-4" name="toggle" type="radio">
@@ -182,13 +223,13 @@
                         <ol class="slider__titles-list">
                             <div class="slider__titles-wrapper">
                                 <li class="slider__title slider__title--active">Rooms Measurements</li>
-                                <li class="slider__title">Estimates Compilation</li>
-                                <li class="slider__title">Project Design Development</li>
+                                <li class="slider__title" tabindex="0">Estimates Compilation</li>
+                                <li class="slider__title" tabindex="0">Project Design Development</li>
                             </div>
                             <div class="slider__titles-wrapper">
-                            <li class="slider__title">Purchasing Supplies</li>
-                            <li class="slider__title">Finishing Repair Work</li>
-                            <li class="slider__title">Work Acceptance</li>
+                                <li class="slider__title" tabindex="0">Purchasing Supplies</li>
+                                <li class="slider__title" tabindex="0">Finishing Repair Work</li>
+                                <li class="slider__title" tabindex="0">Work Acceptance</li>
                             </div>
                         </ol>
                         <ul class="slider__images-list process__images-list">
@@ -217,4 +258,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="js/broadcast.js"></script>
 </body>
+</html>
