@@ -1,0 +1,55 @@
+.price-design {
+  margin-bottom: 40px;
+}
+
+.price-design__title {
+  &::after {
+    background-image: url("../assets/img/icon-price-design.svg");
+    margin-bottom: 30px;
+  }
+}
+
+.price-design__description {
+  max-width: 670px;
+}
+
+.price-design__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet + 100px) {
+  .price-design {
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: $smalltablet) {
+  .price-design__wrapper {
+    flex-direction: column;
+  }
+
+  .price-design__title {
+    padding: 0 18px;
+  }
+
+  .price-design__description {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .price-design {
+    background-color: $bg-dark-color;
+    padding-top: 170px;
+    margin-bottom: 0;
+  }
+
+  .price-design__title {
+    color: $text-ondark-color;
+  }
+
+  .price-design__description {
+     color: $text-ondark-color;
+  }
+}
