@@ -90,7 +90,7 @@
                                     </tr>
                                     <tr>
                                         <td class="slider__item-value">3.5 months</td>
-                                        <td class="slider__item-value">Upon request</td>
+                                        <td class="slider__item-value">Upon measurement</td>
                                     </tr>
                                 </table>
                             </li>
@@ -150,7 +150,7 @@
                 <p class="section__description--bottom broadcast__description">At each facility, a camera is installed
                     that broadcasts the progress of work on the clock. At any time, you can go to our website and
                     monitor the progress of work in your apartment. You can watch the live broadcast from one of our
-                    facilities! Leave a request below and you will receive a link to the broadcast.
+                    facilities! Leave a measurement below and you will receive a link to the broadcast.
                 </p>
                 <form action="" class="form broadcast__form " method="post">
                     <label class="form__label broadcast__label">
@@ -166,7 +166,6 @@
                     </label>
 
                     <button class="button broadcast__submit-button" type="submit">Submit</button>
-
 
                     <input checked class="form__checkbox" id="broadcast-agreement" name="personal-data-agreement"
                            tabindex="0" type="checkbox" required>
@@ -205,7 +204,7 @@
                     <div class="price__description">
                         <h3 class="price__title">Overhaul</h3>
                         <ul class="price__features">
-                            <li> Dismantling of old coatings</li>
+                            <li>Dismantling of old coatings</li>
                             <li>Wallpapering</li>
                             <li>Painting walls and ceilings</li>
                             <li>Laying flooring</li>
@@ -238,10 +237,59 @@
             </div>
         </section>
 
+        <section class="measurement">
+            <h2 class="visually-hidden">Features</h2>
+            <div class="wrapper measurement__wrapper">
+                <div class="measurement__column-wrapper">
+                    <ol class="measurement__list">
+                        <li class="measurement__item measurement__item--first">Our specialist will arrive for measurements per day
+                            contact, or appoint a date convenient for you
+                        </li>
+                        <li class="measurement__item measurement__item--second">Free metering</li>
+                        <li class="measurement__item measurement__item--third">Free consultation</li>
+                        <li class="measurement__item measurement__item--fourth">Get a cost estimate and
+                            the timing of your future repairs
+                        </li>
+                    </ol>
+                </div>
+                <div class="measurement__column-wrapper">
+                    <form action="" class="form measurement__form form" method="post">
+                        <p class="measurement__description">Leave a request for free measurement</p>
+                        <label class="form__label measurement__label">
+                            Name
+                            <input autocomplete="off" class="form__input measurement__input" name="user-name"
+                                   placeholder="What is your name:" type="text" minlength="1" required>
+                        </label>
+                        <label class="form__label measurement__label">
+                            Phone
+                            <input autocomplete="off" class="form__input measurement__input" name="phone"
+                                   placeholder="Your phone number:" type="tel" minlength="1" required>
+                        </label>
+                        <label class="form__label measurement__label">
+                            Email
+                            <input autocomplete="off" class="form__input measurement__input" name="email"
+                                   placeholder="Your email:" type="email" minlength="1" required>
+                        </label>
+                        <input checked class="form__checkbox" id="measurement-agreement" name="personal-data-agreement"
+                               tabindex="0" type="checkbox" required>
+                        <label class="form__label--checkbox  measurement__label measurement__label--agreement"
+                               for="measurement-agreement">
+                            I agree to the processing of personal data
+                        </label>
+                        <button class="button measurement__submit-button" type="submit">Call a Measurer</button>
+                    </form>
+                    <p class="measurement__note">
+                        Help save 10–20% of the materials cost
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="price-design">
             <h2 class="section__title price-design__title">Design Project</h2>
             <p class="section__description price-design__description">
-                Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
+                Design project not only helps to make the repair of your apartment more modern, but also significantly
+                reduces the cost of materials and reduces the time of repair work.
             </p>
             <div class="wrapper price-design__wrapper">
                 <section class="price__card">
