@@ -1,0 +1,146 @@
+.styles {
+  box-sizing: border-box;
+  max-height: 860px;
+  margin-bottom: 140px;
+  padding-top: 135px;
+  background-image: url("../assets/img/bg-styles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.styles__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.styles__title {
+  width: 70%;
+
+  &::after {
+    display: none;
+  }
+}
+
+.styles__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.styles__item {
+  margin-bottom: 15px;
+}
+
+.styles__link {
+  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  color: $text-ondark-color;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.styles__link--active {
+  color: $accent-color;
+  border-bottom: 1px solid $accent-color;
+
+  &:hover {
+    border-bottom: 1px solid $link-hover;
+  }
+
+  &:active {
+    border-bottom: 1px solid $link-active;
+  }
+}
+
+.styles__photos-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.styles__photos-wrapper:nth-child(2) {
+  transform: translateY(-250px);
+}
+
+.styles__photos-wrapper:nth-child(1) {
+  transform: translateY(-170px);
+}
+
+.styles__photos {
+  display: flex;
+}
+
+.styles__photo-item {
+  margin-bottom: 40px;
+}
+
+.styles__button {
+  display: none;
+}
+
+@media (max-width: $tablet + 200px) {
+  .styles {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .styles__wrapper {
+    padding-left: 45px;
+  }
+
+  .styles__title {
+    margin-top: 70px;
+  }
+
+  .styles__photos-wrapper:nth-child(1),
+  .styles__photos-wrapper:nth-child(2) {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: $tablet) {
+  .styles__title {
+    margin-top: 0;
+  }
+
+  .styles__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .styles {
+    margin-bottom: 120px;
+    background-image: none;
+  }
+
+  .styles__wrapper {
+    padding-left: 18px;
+  }
+
+  .styles__list {
+    display: none;
+  }
+
+  .styles__photos {
+    position: absolute;
+    top: 90px;
+    display: block;
+    width: 340px;
+    height: 242px;
+    overflow: hidden;
+  }
+
+  .styles__photos-wrapper {
+    margin-left: 0;
+  }
+
+  .styles__button {
+    display: block;
+  }
+}
+

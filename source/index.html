@@ -155,20 +155,20 @@
                 <form action="" class="form broadcast__form " method="post">
                     <label class="form__label broadcast__label">
                         Name
-                        <input autocomplete="off" class="form__input broadcast__input" name="user-name"
-                               placeholder="What is your name:" type="text" minlength="1" required>
+                        <input autocomplete="off" class="form__input broadcast__input" minlength="1"
+                               name="user-name" placeholder="What is your name:" required type="text">
                     </label>
 
                     <label class="form__label broadcast__label">
                         Phone
-                        <input autocomplete="off" class="form__input broadcast__input" name="user-phone"
-                               placeholder="Your phone number:" type="tel" minlength="6" required>
+                        <input autocomplete="off" class="form__input broadcast__input" minlength="6"
+                               name="user-phone" placeholder="Your phone number:" required type="tel">
                     </label>
 
                     <button class="button broadcast__submit-button" type="submit">Submit</button>
 
                     <input checked class="form__checkbox" id="broadcast-agreement" name="personal-data-agreement"
-                           tabindex="0" type="checkbox" required>
+                           required tabindex="0" type="checkbox">
                     <label class="form__label--checkbox broadcast__label--agreement" for="broadcast-agreement">
                         I agree to the processing of personal data
                     </label>
@@ -181,7 +181,7 @@
             <div class="wrapper price-repair__wrapper">
                 <section class="price__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-redecorating.jpg" alt="Redecorating Repair">
+                        <img alt="Redecorating Repair" src="assets/img/img-price-redecorating.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Redecorating</h3>
@@ -199,7 +199,7 @@
                 </section>
                 <section class="price__card price-repair__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-overhaul.jpg" alt="Overhaul Repair">
+                        <img alt="Overhaul Repair" src="assets/img/img-price-overhaul.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Overhaul</h3>
@@ -218,7 +218,7 @@
                 </section>
                 <section class="price__card price-repair__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-designer.jpg" alt="Designer Repair">
+                        <img alt="Designer Repair" src="assets/img/img-price-designer.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Designer Repair</h3>
@@ -242,7 +242,8 @@
             <div class="wrapper measurement__wrapper">
                 <div class="measurement__column-wrapper">
                     <ol class="measurement__list">
-                        <li class="measurement__item measurement__item--first">Our specialist will arrive for measurements per day
+                        <li class="measurement__item measurement__item--first">Our specialist will arrive for
+                            measurements per day
                             contact, or appoint a date convenient for you
                         </li>
                         <li class="measurement__item measurement__item--second">Free metering</li>
@@ -257,21 +258,21 @@
                         <p class="measurement__description">Leave a request for free measurement</p>
                         <label class="form__label measurement__label">
                             Name
-                            <input autocomplete="off" class="form__input measurement__input" name="user-name"
-                                   placeholder="What is your name:" type="text" minlength="1" required>
+                            <input autocomplete="off" class="form__input measurement__input" minlength="1"
+                                   name="user-name" placeholder="What is your name:" required type="text">
                         </label>
                         <label class="form__label measurement__label">
                             Phone
-                            <input autocomplete="off" class="form__input measurement__input" name="phone"
-                                   placeholder="Your phone number:" type="tel" minlength="1" required>
+                            <input autocomplete="off" class="form__input measurement__input" minlength="1"
+                                   name="phone" placeholder="Your phone number:" required type="tel">
                         </label>
                         <label class="form__label measurement__label">
                             Email
-                            <input autocomplete="off" class="form__input measurement__input" name="email"
-                                   placeholder="Your email:" type="email" minlength="1" required>
+                            <input autocomplete="off" class="form__input measurement__input" minlength="1"
+                                   name="email" placeholder="Your email:" required type="email">
                         </label>
                         <input checked class="form__checkbox" id="measurement-agreement" name="personal-data-agreement"
-                               tabindex="0" type="checkbox" required>
+                               required tabindex="0" type="checkbox">
                         <label class="form__label--checkbox  measurement__label measurement__label--agreement"
                                for="measurement-agreement">
                             I agree to the processing of personal data
@@ -285,6 +286,56 @@
             </div>
         </section>
 
+        <section class="styles">
+            <div class="wrapper styles__wrapper">
+                <div class="styles__content-wrapper">
+                    <h2 class="section__title--accented styles__title">We realize your wildest fantasies</h2>
+                    <ul class="styles__list">
+                        <li class="styles__item"><a class="styles__link styles__link--active" href="#">American
+                            classic</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Empire</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Classical</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Loft</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Minimalism</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Provence</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Romanticism</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Scandinavian style</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Mediterranean style</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">High tech</a></li>
+                        <li class="styles__item"><a class="styles__link" href="#">Eclecticism</a></li>
+                    </ul>
+                </div>
+                <div class="styles__photos">
+                    <div class="styles__photos-wrapper">
+                        <picture class="styles__photo-item">
+                            <source media="(max-width: 375px)" srcset="assets/img/img-styles-1-mobile@1x.jpg 1x">
+                            <img alt="American Classic 1" src="assets/img/img-styles-1@1x.jpg"/>
+                        </picture>
+                        <picture class="styles__photo-item">
+                            <source media="(max-width: 375px)" srcset="">
+                            <img alt="American Classic 2" src="assets/img/img-styles-2@1x.jpg"/>
+                        </picture>
+                    </div>
+                    <div class="styles__photos-wrapper">
+                        <picture class="styles__photo-item">
+                            <source media="(max-width: 375px)" srcset="">
+                            <img alt="American Classic 3" src="assets/img/img-styles-3@1x.jpg"/>
+                        </picture>
+                        <picture class="styles__photo-item">
+                            <source media="(max-width: 375px)" srcset="">
+                            <img alt="American Classic 4" src="assets/img/img-styles-4@1x.jpg"/>
+                        </picture>
+                    </div>
+                    <button class="button styles__button slider__button slider__button--next" type="button">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <button class="button styles__button slider__button slider__button--previous" type="button">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <section class="price-design">
             <h2 class="section__title price-design__title">Design Project</h2>
             <p class="section__description price-design__description">
@@ -294,7 +345,7 @@
             <div class="wrapper price-design__wrapper">
                 <section class="price__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-mini.jpg" alt="Mini Design Project ">
+                        <img alt="Mini Design Project " src="assets/img/img-price-mini.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Mini</h3>
@@ -309,7 +360,7 @@
                 </section>
                 <section class="price__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-standard.jpg" alt="Standard Design Project">
+                        <img alt="Standard Design Project" src="assets/img/img-price-standard.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Standard</h3>
@@ -327,7 +378,7 @@
                 </section>
                 <section class="price__card">
                     <picture class="price__image">
-                        <img src="assets/img/img-price-full.jpg" alt="Full Design Project">
+                        <img alt="Full Design Project" src="assets/img/img-price-full.jpg">
                     </picture>
                     <div class="price__description">
                         <h3 class="price__title">Full</h3>

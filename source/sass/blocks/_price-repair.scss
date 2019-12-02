@@ -15,6 +15,10 @@
 }
 
 @media (max-width: $smalltablet) {
+  .price-repair {
+    margin-bottom: 0;
+  }
+
   .price-repair__wrapper {
     flex-direction: column;
   }

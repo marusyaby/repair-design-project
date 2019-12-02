@@ -1,5 +1,5 @@
 .measurement {
-  margin-bottom: 60px;
+  margin-bottom: 220px;
   background-image: url("/assets/img/bg-measurement.png");
   background-repeat: no-repeat;
   background-position: bottom 100px left -100px;
@@ -161,10 +161,17 @@
   }
 }
 
+@media (max-width: $tablet + 200px) {
+  .measurement {
+    margin-bottom: 120px;
+  }
+}
+
 @media (max-width: $tablet + 100px) {
   .measurement__column-wrapper {
     width: 50%;
   }
+
   .measurement__list {
     margin-top: 70px;
     margin-left: 45px;
@@ -197,3 +204,4 @@
     display: none;
   }
 }
+
