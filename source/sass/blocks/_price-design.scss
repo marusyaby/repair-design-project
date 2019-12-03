@@ -4,8 +4,8 @@
 
 .price-design__title {
   &::after {
-    background-image: url("../assets/img/icon-price-design.svg");
     margin-bottom: 30px;
+    background-image: url("../assets/img/icon-price-design.svg");
   }
 }
 
@@ -25,31 +25,30 @@
 }
 
 @media (max-width: $smalltablet) {
+  .price-design {
+    margin-bottom: 0;
+    padding-top: 100px;
+    background-color: $bg-dark-color;
+  }
   .price-design__wrapper {
     flex-direction: column;
+
   }
 
   .price-design__title {
     padding: 0 18px;
+    color: $text-ondark-color;
   }
 
   .price-design__description {
     padding: 0 18px;
+    color: $text-ondark-color;
   }
 }
 
 @media (max-width: $mobile) {
   .price-design {
-    background-color: $bg-dark-color;
-    padding-top: 170px;
-    margin-bottom: 0;
-  }
-
-  .price-design__title {
-    color: $text-ondark-color;
-  }
-
-  .price-design__description {
-     color: $text-ondark-color;
+    padding-top: 200px;
   }
 }
+

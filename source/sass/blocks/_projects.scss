@@ -1,6 +1,6 @@
 .projects {
   padding-top: 170px;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
   background-color: $bg-darkest-color;
 }
 
@@ -32,6 +32,10 @@
 }
 
 @media (max-width: $smalltablet) {
+  .projects {
+    padding-bottom: 340px;
+  }
+
   .projects__wrapper {
     padding-left: 18px;
   }

@@ -6,6 +6,7 @@
   background-image: url("../assets/img/bg-styles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $bg-dark-color;
 }
 
 .styles__wrapper {
@@ -103,6 +104,10 @@
 }
 
 @media (max-width: $tablet) {
+  .styles {
+    margin-bottom: 80px;
+  }
+
   .styles__title {
     margin-top: 0;
   }
@@ -112,10 +117,17 @@
   }
 }
 
+@media (max-width: $smalltablet) {
+  .styles {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: $mobile) {
   .styles {
     margin-bottom: 120px;
     background-image: none;
+    background-color: transparent;
   }
 
   .styles__wrapper {

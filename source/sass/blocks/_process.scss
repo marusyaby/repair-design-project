@@ -1,7 +1,7 @@
 .process {
   margin-top: -160px;
   padding-top: 400px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background-color: $bg-darkest-color;
 }
 
@@ -60,8 +60,16 @@
 }
 
 @media (max-width: $smalltablet + 100px) {
+  .process {
+    padding-bottom: 80px;
+  }
+
   .process__wrapper {
     padding-right: 18px;
+  }
+
+  .process__images-list {
+    display: none;
   }
 
   .process__image {
@@ -70,6 +78,11 @@
 }
 
 @media (max-width: $smalltablet) {
+  .process {
+    padding-top: 200px;
+    background-color: $bg-dark-color;
+  }
+
   .process__wrapper {
     padding-left: 18px;
   }
