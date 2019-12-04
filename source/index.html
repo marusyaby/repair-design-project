@@ -525,11 +525,15 @@
 
                 <div class="reviews__cards-wrapper">
                     <section class="reviews__card">
-                        <img class="reviews__card-photo" alt="" src="assets/img/img-reviews-fedosova.jpg">
+                        <img alt="" class="reviews__card-photo" src="assets/img/img-reviews-fedosova.jpg">
                         <h3 class="reviews__card-name">Fedosova Maria Konstantinovna</h3>
                         <p class="reviews__card-text">
-                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach.
-                            The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repair as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. Team mobile and
+                            professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                            democratic. I recommend these masters.
                         </p>
                         <div class="reviews__card-stat">
                             <span class="reviews__card-area">40 m2</span>
@@ -537,11 +541,15 @@
                         </div>
                     </section>
                     <section class="reviews__card">
-                        <img class="reviews__card-photo" alt="" src="assets/img/img-reviews-afanasyev.jpg">
+                        <img alt="" class="reviews__card-photo" src="assets/img/img-reviews-afanasyev.jpg">
                         <h3 class="reviews__card-name">Afanasyev Sergey Alexandrovich</h3>
                         <p class="reviews__card-text">
-                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach.
-                            The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repair as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. Team mobile and
+                            professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                            democratic. I recommend these masters.
                         </p>
                         <div class="reviews__card-stat">
                             <span class="reviews__card-area">90 m2</span>
@@ -549,11 +557,15 @@
                         </div>
                     </section>
                     <section class="reviews__card">
-                        <img class="reviews__card-photo" alt="" src="assets/img/img-reviews-kiriev.jpg">
+                        <img alt="" class="reviews__card-photo" src="assets/img/img-reviews-kiriev.jpg">
                         <h3 class="reviews__card-name">Kiriev Egor Leonidovich</h3>
                         <p class="reviews__card-text">
-                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach.
-                            The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repair as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. Team mobile and
+                            professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                            democratic. I recommend these masters.
                         </p>
                         <div class="reviews__card-stat">
                             <span class="reviews__card-area">56 m2</span>
@@ -561,6 +573,52 @@
                         </div>
                     </section>
                 </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h2 class="visually-hidden">Contacts</h2>
+            <div class="wrapper contacts__wrapper">
+                <form action="" class="form contacts__form form" method="post">
+                    <h3 class="contacts__title">Have any questions?</h3>
+                    <div class="contacts__form-wrapper">
+                        <label class="form__label contacts__label">
+                            Name
+                            <input autocomplete="off" class="form__input contacts__input" minlength="1"
+                                   name="user-name" placeholder="What is your name:" required type="text">
+                        </label>
+                        <label class="form__label contacts__label">
+                            Phone
+                            <input autocomplete="off" class="form__input contacts__input" minlength="1"
+                                   name="phone" placeholder="Your phone number:" required type="tel">
+                        </label>
+                    </div>
+                    <label class="form__label contacts__label">
+                        Question
+                        <input autocomplete="off" class="form__input contacts__input" minlength="1"
+                               name="email" placeholder="I want to know:" required type="text">
+                    </label>
+                    <input checked class="form__checkbox" id="contacts-agreement" name="personal-data-agreement"
+                           required tabindex="0" type="checkbox">
+                    <label class="form__label--checkbox  contacts__label contacts__label--agreement"
+                           for="contacts-agreement">
+                        I agree to the processing of personal data
+                    </label>
+                    <button class="button contacts__submit-button" type="submit">Submit</button>
+                </form>
+                <p class="contacts__address">Rostov-on-Don, Nansen St.,&nbsp;239 Shopping Center
+                    Decorum Tel&nbsp;<a class="contacts__phone" href="tel:+79287683239">+7&nbsp;(928)&nbsp;768&nbsp;32&nbsp;29</a>
+                </p>
+
+                <div class="contacts__links-wrapper">
+                    <a class="contacts__link contacts__link--email" href="mailto:#">
+                        <span class="visually-hidden">Email</span>
+                    </a>
+                    <a class="contacts__link contacts__link--insta" href="#">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                </div>
+                <div class="contacts__map" id="map"></div>
             </div>
         </section>
 
@@ -584,5 +642,9 @@
     </footer>
 
     <script src="js/broadcast.js"></script>
+    <script src="js/map.js"></script>
+    <script async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzERUFXPpROp93z8YEvxGgvaBESiOgUM&callback=initMap"></script>
 </body>
 </html>

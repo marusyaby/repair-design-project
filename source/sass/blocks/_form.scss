@@ -13,14 +13,19 @@
   padding-top: 5px;
   padding-bottom: 7px;
   font-size: 18px;
+  background-color: transparent;
   border: 0;
   border-bottom: 1px solid $text-faded-color;
-  background-color: transparent;
 
   &:focus,
   &:active {
     border-bottom: 1px solid $accent-color;
     outline: 0;
+  }
+
+  &::placeholder {
+    color: $text-ondark-color;
+    opacity: 1;
   }
 }
 
