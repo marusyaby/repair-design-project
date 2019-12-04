@@ -31,6 +31,7 @@
 
 .form__label--checkbox {
   position: relative;
+
   @include font-text(16px, 22px, $text-color);
   cursor: pointer;
 

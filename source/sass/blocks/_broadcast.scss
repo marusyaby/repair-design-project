@@ -1,7 +1,6 @@
 .broadcast {
   position: relative;
   margin-bottom: 140px;
-  background: transparent;
   background: linear-gradient(180deg, $bg-darkest-color 35%, $bg-light-color 35%);
 
   &::after {
@@ -35,7 +34,7 @@
   margin: 0 auto;
   margin-bottom: 55px;
   background-color: $charcoal;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .broadcast__video--enabled {
@@ -92,6 +91,7 @@
 }
 
 .broadcast__label {
+
   @include font-text(15px, 18px, $text-faded-color);
   width: 30%;
   min-width: 150px;
@@ -125,8 +125,12 @@
 @media (max-width: $smalltablet) {
   .broadcast {
     margin-top: -260px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     background: $bg-darkest-color;
+  }
+
+  .broadcast__title {
+    margin-bottom: 40px;
   }
 
   .broadcast__description {
@@ -139,6 +143,7 @@
 
   .broadcast__label {
     width: 100%;
+
     @include font-text(15px, 20px, $text-ondark-faded-color);
   }
 

@@ -4,8 +4,8 @@
 
 .price-repair__title {
   &::after {
-    background-image: url("../assets/img/icon-price-repair.svg");
     margin-bottom: 30px;
+    background-image: url("../assets/img/icon-price-repair.svg");
   }
 }
 
@@ -25,6 +25,7 @@
 
   .price-repair__title {
     padding: 0 18px;
+
     &::after {
       margin-bottom: 40px;
     }

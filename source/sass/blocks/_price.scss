@@ -9,7 +9,8 @@
 }
 
 .price__description {
-  padding: 20px;
+  padding: 30px;
+  padding-top: 20px;
   box-sizing: border-box;
   max-width: 330px;
   width: 85%;
@@ -24,6 +25,7 @@
 
 .price__title {
   margin: 0;
+
   @include font-title(18px, 25px, $text-color);
   margin-bottom: 5px;
 }
@@ -69,9 +71,9 @@
   }
 
   .price__description {
-    padding-left: 35px;
+    padding-left: 30px;
     padding-right: 35px;
-    padding-top: 35px;
+    padding-top: 25px;
     position: static;
     transform: translate(0, 0);
     margin-top: -250px;
@@ -90,8 +92,10 @@
   }
 
   .price__description {
+    width: 70%;
     margin-top: -150px;
     margin-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .price__title {

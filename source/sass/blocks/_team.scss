@@ -14,7 +14,7 @@
 
 .team__description-top {
   width: 440px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   color: $text-ondark-color;
 }
 
@@ -25,7 +25,7 @@
 .team__cards-wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@
     background-color: $accent-color;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
   }
 }
 
@@ -82,18 +82,19 @@
 
 .team__member-name {
   @include font-title(18px, 25px);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .team__member-title {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
 
 .team__member-experience {
   display: block;
   padding: 13px;
+
   @include font-title(13px, 20px, $text-ondark-color);
   text-transform: uppercase;
   background-color: $accent-color;
@@ -128,6 +129,7 @@
   }
 
   .team__member-description {
+    top: 280px;
     width: calc(100% - 70px);
   }
 
@@ -139,5 +141,9 @@
 @media (max-width: $mobile) {
   .team {
     margin-bottom: 0;
+  }
+
+  .team__card {
+    margin-bottom: 100px;
   }
 }

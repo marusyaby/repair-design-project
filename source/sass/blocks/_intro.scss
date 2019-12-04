@@ -55,6 +55,7 @@
 
   &:active::after {
     background-color: $link-active;
+
     @include link-active;
   }
 }
@@ -89,7 +90,7 @@
   min-height: 51px;
   margin-top: 25px;
   margin-right: 15px;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.5);
 }
 
 .intro__button--minor {
@@ -108,6 +109,7 @@
   min-height: 90px;
   text-transform: uppercase;
   background-color: $bg-darkest-color;
+
   @include font-title(14px, auto, $text-ondark-color);
   border: 0;
 
@@ -118,7 +120,6 @@
     height: 29px;
     margin-left: 15px;
     background: url("../assets/img/icon-scroll.svg");
-
   }
 
   &:hover {
@@ -163,6 +164,11 @@
     min-height: 480px;
     padding-top: 85px;
     background-image: url('../assets/img/bg-intro-mobile.jpg');
+  }
+
+  .intro__title {
+    font-size: 23px;
+    line-height: 31px;
   }
 
   .intro__link {

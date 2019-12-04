@@ -1,12 +1,12 @@
 .styles {
   box-sizing: border-box;
   max-height: 860px;
-  margin-bottom: 140px;
+  margin-bottom: 155px;
   padding-top: 135px;
+  background-color: $bg-dark-color;
   background-image: url("../assets/img/bg-styles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $bg-dark-color;
 }
 
 .styles__wrapper {
@@ -17,6 +17,7 @@
 
 .styles__title {
   width: 70%;
+  margin-bottom: 35px;
 
   &::after {
     display: none;
@@ -120,14 +121,15 @@
 @media (max-width: $smalltablet) {
   .styles {
     margin-bottom: 0;
+    padding-top: 20px;
   }
 }
 
 @media (max-width: $mobile) {
   .styles {
-    margin-bottom: 120px;
-    background-image: none;
+    margin-bottom: 90px;
     background-color: transparent;
+    background-image: none;
   }
 
   .styles__wrapper {

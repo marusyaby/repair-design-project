@@ -1,7 +1,7 @@
 .process {
   margin-top: -160px;
   padding-top: 400px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   background-color: $bg-darkest-color;
 }
 
@@ -46,7 +46,6 @@
 
 .process__image--step-1 {
   background-image: url("../assets/img/img-slider-step1.jpg");
-
 }
 
 @media (max-width: $tablet + 100px) {

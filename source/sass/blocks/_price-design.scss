@@ -4,7 +4,7 @@
 
 .price-design__title {
   &::after {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-image: url("../assets/img/icon-price-design.svg");
   }
 }
@@ -30,9 +30,9 @@
     padding-top: 100px;
     background-color: $bg-dark-color;
   }
+
   .price-design__wrapper {
     flex-direction: column;
-
   }
 
   .price-design__title {
